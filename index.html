@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Flix Animation Demo</title>
+  </head>
+  <body>
+    <nav><img src="/src/logo.png" alt="" class="logo" /></nav>
+    <main>
+      <div class="left">
+        <p class="subheadline">OUR SERVICES</p>
+        <h1>Branding</h1>
+        <p>
+          Address your target group with creative content anywhere and anytime!
+        </p>
+
+        <button>REQUEST AN OFFER NOW</button>
+      </div>
+
+      <div class="right">
+        <canvas id="canvas" width="1200" height="560"></canvas>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+    <script>
+      new rive.Rive({
+        src: "./src/branding-animation.riv",
+        // Or the path to a local Rive asset
+        // src: './example.riv',
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+      });
+    </script>
+  </body>
+</html>
