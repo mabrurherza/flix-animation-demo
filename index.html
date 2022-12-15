@@ -17,18 +17,40 @@
   <body>
     <nav><img src="/src/logo.png" alt="" class="logo" /></nav>
     <main>
-      <div class="left">
-        <p class="subheadline">OUR SERVICES</p>
-        <h1>Branding</h1>
-        <p>
-          Address your target group with creative content anywhere and anytime!
-        </p>
+      <div class="container">
+        <div class="left">
+          <p class="subheadline">OUR SERVICES</p>
+          <h1>Branding</h1>
+          <p>
+            Address your target group with creative content anywhere and
+            anytime!
+          </p>
+          <button>REQUEST AN OFFER NOW</button>
+        </div>
 
-        <button>REQUEST AN OFFER NOW</button>
+        <div class="right branding">
+          <canvas id="canvas" width="1200" height="560"></canvas>
+        </div>
       </div>
 
-      <div class="right">
-        <canvas id="canvas" width="1200" height="560"></canvas>
+      <!-- D I V I D E R -->
+      <div class="divider"></div>
+      <!-- D I V I D E R -->
+
+      <div class="container">
+        <div class="left">
+          <p class="subheadline">OUR SERVICES</p>
+          <h1>Web Design</h1>
+          <p>
+            Address your target group with creative content anywhere and
+            anytime!
+          </p>
+          <button>REQUEST AN OFFER NOW</button>
+        </div>
+
+        <div class="right webdesign">
+          <canvas id="canvas2" width="680" height="560"></canvas>
+        </div>
       </div>
     </main>
 
@@ -36,9 +58,13 @@
     <script>
       new rive.Rive({
         src: "./src/branding-animation.riv",
-        // Or the path to a local Rive asset
-        // src: './example.riv',
         canvas: document.getElementById("canvas"),
+        autoplay: true,
+      });
+
+      new rive.Rive({
+        src: "./src/webdesign-animation.riv",
+        canvas: document.getElementById("canvas2"),
         autoplay: true,
       });
     </script>
