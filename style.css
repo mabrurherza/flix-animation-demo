@@ -93,6 +93,10 @@ h1 {
     font-size: clamp(1.85rem, 0.5065rem + 2.0779vw, 3rem);
 }
 
+.body-text {
+    line-height: 150%;
+}
+
 .subheadline {
     font-size: 0.8rem;
     font-weight: 600;
