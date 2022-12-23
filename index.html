@@ -29,7 +29,7 @@
         </div>
 
         <div class="right branding">
-          <canvas id="canvas" width="1280" height="560"></canvas>
+          <canvas id="canvas" width="960" height="560"></canvas>
         </div>
       </div>
 
@@ -49,7 +49,7 @@
         </div>
 
         <div class="right webdesign">
-          <canvas id="canvas2" width="1200" height="560"></canvas>
+          <canvas id="canvas2" width="960" height="560"></canvas>
         </div>
       </div>
 
@@ -69,7 +69,7 @@
         </div>
 
         <div class="right webdesign">
-          <canvas id="canvas3" width="1200" height="560"></canvas>
+          <canvas id="canvas3" width="960" height="560"></canvas>
         </div>
       </div>
 
@@ -89,7 +89,27 @@
         </div>
 
         <div class="right webdesign">
-          <canvas id="canvas4" width="1200" height="560"></canvas>
+          <canvas id="canvas4" width="960" height="560"></canvas>
+        </div>
+      </div>
+
+      <!-- D I V I D E R -->
+      <div class="divider"></div>
+      <!-- D I V I D E R -->
+
+      <div class="container">
+        <div class="left">
+          <p class="subheadline">OUR SERVICES</p>
+          <h1 class="title">Social Media Marketing</h1>
+          <p>
+            Address your target group with creative content anywhere and
+            anytime!
+          </p>
+          <button>REQUEST AN OFFER NOW</button>
+        </div>
+
+        <div class="right webdesign">
+          <canvas id="canvas5" width="960" height="560"></canvas>
         </div>
       </div>
 
@@ -123,6 +143,12 @@
       new rive.Rive({
         src: "./src/branding-animation-draft1.riv",
         canvas: document.getElementById("canvas4"),
+        autoplay: true,
+      });
+
+      new rive.Rive({
+        src: "./src/socmed-draft1.riv",
+        canvas: document.getElementById("canvas5"),
         autoplay: true,
       });
     </script>
