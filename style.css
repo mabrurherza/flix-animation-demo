@@ -75,6 +75,25 @@ nav {
     width: 180px;
 }
 
+.homepage-container-left {
+}
+
+.canvas-resize {
+    scale: 0.9;
+}
+
+#canvas0 {
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5vw 0 0;
+
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -99,6 +118,7 @@ h1 {
 
 .body-text {
     line-height: 150%;
+    margin-top: 5px;
 }
 
 .subheadline {
@@ -110,9 +130,6 @@ h1 {
     display: flex;
 }
 
-.webdesign {
-    justify-content: flex-end;
-}
 
 #canvas {
     width: 100%;

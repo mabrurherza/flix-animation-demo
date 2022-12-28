@@ -18,6 +18,24 @@
     <nav><img src="/src/logo.png" alt="" class="logo" /></nav>
     <main>
       <div class="container">
+        <div class="homepage-container-left">
+          <div class="canvas-resize">
+            <canvas id="canvas0" width="960" height="640"></canvas>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <h1>Online Marketing Agentur in Frankfurt am Main</h1>
+          <p class="body-text">Homepage illustration.</p>
+          <button>Mehr erfahren</button>
+        </div>
+      </div>
+
+      <!-- D I V I D E R -->
+      <div class="divider"></div>
+      <!-- D I V I D E R -->
+
+      <div class="container">
         <div class="left">
           <p class="subheadline">OUR SERVICES</p>
           <h1>Web Design</h1>
@@ -28,8 +46,10 @@
           <button>REQUEST AN OFFER NOW</button>
         </div>
 
-        <div class="right branding">
-          <canvas id="canvas" width="960" height="560"></canvas>
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas" width="960" height="560"></canvas>
+          </div>
         </div>
       </div>
 
@@ -41,15 +61,17 @@
         <div class="left">
           <p class="subheadline">OUR SERVICES</p>
           <h1 class="title">Content Marketing & Management</h1>
-          <p>
+          <p class="body-text">
             Address your target group with creative content anywhere and
             anytime!
           </p>
           <button>REQUEST AN OFFER NOW</button>
         </div>
 
-        <div class="right webdesign">
-          <canvas id="canvas2" width="960" height="560"></canvas>
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas2" width="960" height="560"></canvas>
+          </div>
         </div>
       </div>
 
@@ -61,15 +83,17 @@
         <div class="left">
           <p class="subheadline">OUR SERVICES</p>
           <h1 class="title">SEO, SEM & SEA</h1>
-          <p>
+          <p class="body-text">
             Address your target group with creative content anywhere and
             anytime!
           </p>
           <button>REQUEST AN OFFER NOW</button>
         </div>
 
-        <div class="right webdesign">
-          <canvas id="canvas3" width="960" height="560"></canvas>
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas3" width="960" height="560"></canvas>
+          </div>
         </div>
       </div>
 
@@ -81,15 +105,17 @@
         <div class="left">
           <p class="subheadline">OUR SERVICES</p>
           <h1 class="title">Corporate Branding</h1>
-          <p>
+          <p class="body-text">
             Address your target group with creative content anywhere and
             anytime!
           </p>
           <button>REQUEST AN OFFER NOW</button>
         </div>
 
-        <div class="right webdesign">
-          <canvas id="canvas4" width="960" height="560"></canvas>
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas4" width="960" height="640"></canvas>
+          </div>
         </div>
       </div>
 
@@ -101,15 +127,39 @@
         <div class="left">
           <p class="subheadline">OUR SERVICES</p>
           <h1 class="title">Social Media Marketing</h1>
-          <p>
+          <p class="body-text">
             Address your target group with creative content anywhere and
             anytime!
           </p>
           <button>REQUEST AN OFFER NOW</button>
         </div>
 
-        <div class="right webdesign">
-          <canvas id="canvas5" width="960" height="560"></canvas>
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas5" width="960" height="560"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- D I V I D E R -->
+      <div class="divider"></div>
+      <!-- D I V I D E R -->
+
+      <div class="container">
+        <div class="left">
+          <p class="subheadline">OUR SERVICES</p>
+          <h1 class="title">Online Marketing Consulting</h1>
+          <p class="body-text">
+            Address your target group with creative content anywhere and
+            anytime!
+          </p>
+          <button>REQUEST AN OFFER NOW</button>
+        </div>
+
+        <div class="right">
+          <div class="canvas-resize">
+            <canvas id="canvas6" width="960" height="640"></canvas>
+          </div>
         </div>
       </div>
 
@@ -122,6 +172,12 @@
 
     <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
     <script>
+      new rive.Rive({
+        src: "./src/homepage-draft1.riv",
+        canvas: document.getElementById("canvas0"),
+        autoplay: true,
+      });
+
       new rive.Rive({
         src: "./src/webdesign-animation-draft3.riv",
         canvas: document.getElementById("canvas"),
@@ -149,6 +205,12 @@
       new rive.Rive({
         src: "./src/socmed-draft1.riv",
         canvas: document.getElementById("canvas5"),
+        autoplay: true,
+      });
+
+      new rive.Rive({
+        src: "./src/online-marketing-draft1.riv",
+        canvas: document.getElementById("canvas6"),
         autoplay: true,
       });
     </script>
