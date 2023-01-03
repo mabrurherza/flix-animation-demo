@@ -75,6 +75,11 @@ nav {
     width: 180px;
 }
 
+.small {
+    width: 720px;
+    height: 640px;
+}
+
 .homepage-container-left {
 }
 
